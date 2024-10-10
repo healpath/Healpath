@@ -1,0 +1,191 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+* {
+    font-family: sans-serif;
+}
+
+
+
+.therapy-journey {
+    background-color: #f8f7f7;
+    height: auto;
+}
+
+
+.container3 {
+    height: auto;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    padding-left: 35px;
+    padding-right: 35px;
+    
+    /* margin: 33px; */
+}
+
+
+
+.text-pannel-and-button {
+    background-color: #f8f7f7;
+    width: 100%;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 28px;
+    /* place-items: center stretch; */
+    align-items: center;
+    height: 200px;
+}
+
+
+.text-side {
+    width: 100%;
+}
+
+
+
+.text1 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.text1 h6{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #77beb6;
+}
+
+
+.text2 {
+    width: 100%;
+}
+
+
+.text2 h1 {
+    font-weight: 400;
+    font-size: 60px;
+    color: black;
+    letter-spacing: -.04em;
+    text-transform: none;
+    margin-top: 0;
+    margin-bottom: 16px;
+    
+}
+
+
+.button-side button {
+    width: 180px;
+    height: 60px;
+    background-color: #21404b;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
+.button-side a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* text pannel and button responsive */
+@media (max-width: 925px) {
+    .text-pannel-and-button {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        height: auto;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .text2 h1 {
+        font-size: 42px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.therapy-journey-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 50px;
+}
+
+.therapy-journey-cards {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px;
+    
+    height: 350px;
+}
+
+.pfp {
+    width: 215px;
+    border-radius: 150px;
+    height: 200px;
+}
+
+.name {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* for reponsive cards */
+@media (max-width: 480px) {
+    .container3 {
+        padding: 20px;
+    }
+
+    .therapy-journey-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .button-side button {
+        width: 150px;
+    }
+
+
+
+
+    .pfp {
+        width: 162px;
+        border-radius: 149px;
+        height: 160px;
+    }
+}
+

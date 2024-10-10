@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+
+.container1 {
+    background-color: #21404b;
+    height: auto;
+}
+
+
+
+.title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+
+}
+
+
+.title h3 {
+    font-size: 55px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 8%;
+    color: #fff;
+}
+
+
+
+
+
+
+
+  
+  
+.the-moving-thing {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21404b;
+    padding-bottom: 50px;
+}
+  
+.scroll {
+    width: 85%;
+    overflow: hidden;
+    display: flex;
+}
+  
+  .moving-card-container {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    gap: 20px;
+  }
+  
+  /* Infinite smooth scroll */
+  @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+  }
+  
+  .moving-card {
+    border-radius: 20px;
+    width: 50vw;
+    height: 500px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    box-shadow: inset -30px 0 100px rgba(0, 0, 0, 0.9),
+                inset 30px 0 100px rgba(0, 0, 0, 0.9),
+                inset 0 -105px 100px rgba(0, 0, 0, 0.9);
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Background image */
+  .c1 {
+    background-image: url("https://cdn.prod.website-files.com/66b24337caa778253ad384dc/66b3b7ecbfe1501667c8862c_image-19.jpg");
+  }
+  
+  /* Title and paragraph styling */
+  .moving-card h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .moving-card p {
+    font-size: 16px;
+  }
+  
+  /* Hover effect */
+  .moving-card:hover {
+    transform: scale(1.02); /* Adds a smooth zoom effect on hover */
+    cursor: pointer;
+    box-shadow: inset -15px 0 80px rgba(0, 0, 0, 0.9),
+                inset 15px 0 80px rgba(0, 0, 0, 0.9),
+                inset 0 -20px 80px rgba(0, 0, 0, 0.9);
+    transition: .4s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media  (max-width:750px) {
+
+    .title h3 {
+        font-size: 40px;
+    }
+
+    .moving-card {
+      width: 80vw;
+      height: 300px;
+      padding: 25px;
+    }
+  
+  
+    .moving-card h3 {
+      font-size: 20px;
+    }
+  
+    .moving-card p {
+      font-size: 15px;
+  
+    }
+  }

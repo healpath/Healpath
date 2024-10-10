@@ -1,0 +1,189 @@
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.mental-health-container {
+  background-color: #ffffff;
+  height: auto;
+}
+
+
+.mental-health {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 92.2%;
+  margin: 0 auto;
+  padding: 50px;
+  height: auto;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-content h3 {
+  color: #4fa392;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.text-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.benefits {
+  list-style: none;
+}
+
+.benefits li {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.benefits li:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #4fa392;
+  font-weight: bold;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.image-placeholder {
+  border-radius: 10px;
+  background-color: #cfcfcf;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-placeholder.large {
+  width: 37%;
+  height: 415px;
+  background-image: url("https://cdn.prod.website-files.com/66b1115661238d8d693772a1/66b282e2a1151867af12fc3a_Image15.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.image-placeholder.medium {
+  width: 60%;
+  height: 415px;
+  background-image: url("https://cdn.prod.website-files.com/66b1115661238d8d693772a1/66b253a6a3e5671b685dbc01_image-2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.image-placeholder.full {
+  width: 100%;
+  height: 187px;
+  background-image: url("https://cdn.prod.website-files.com/66b1115661238d8d693772a1/66b295aecb8ebef5cb6cec55_image-5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .mental-health-container {
+    height: auto;
+  }
+
+  .mental-health {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+
+  .text-content {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .text-content h3 {
+    font-size: 16px;
+  }
+
+
+  .text-content h1 {
+    font-size: 32px;
+  }
+
+
+  .benefits {
+    padding: 0;
+  }
+
+
+
+  .image-content {
+    width: 100%;
+  }
+
+
+  
+
+
+}
+
+
+
+@media (max-width: 500px) {
+  .mental-health-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .text-content {
+    margin-bottom: 40px;
+  }
+
+  .image-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-placeholder.large {
+    width: 100%;
+  }
+
+
+  .image-placeholder.medium {
+    width: 100%;
+  }
+
+
+
+
+
+}

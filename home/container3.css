@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel {
+    padding: 45px;
+    padding-left: 30px;
+    padding-bottom: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 4); /* Width for 4 cards */
+}
+
+.cards-container {
+    display: flex;
+}
+
+.card {
+    margin-right: 36px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: auto; /* Initial height */
+    width: 93vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-head {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.card-head-img-container {
+    width: 75px;
+    height: 75px;
+    background-color: #f8f7f7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-head-img-container img {
+    height: 50px;
+    width: 50px;
+}
+
+.card-body {
+    border-top: 0.1px solid #bfc9cc;
+    padding: 45px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+.card-body h3 {
+    font-size: 35px;
+    margin-bottom: 25px;
+
+}
+
+.card-body p {
+    font-size: 20px;
+}
+
+
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.carousel-dots .dot {
+    height: 15px;
+    width: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+    background-color: #666;
+}
+
+
+
+
+
+
+/* Media Queries for Responsive Scaling */
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+
+
+    .carousel {
+        padding-left: 15px;
+    }
+
+
+    .card {
+        height: 300px; /* Reduced card height */
+        padding: 10px;
+    }
+
+    .card-head {
+        padding: 10px;
+    }
+
+    .card-head-img-container {
+        width: 50px; /* Reduce the image container size */
+        height: 50px;
+    }
+
+    .card-head-img-container img {
+        height: 30px; /* Reduce the image size */
+        width: 30px;
+    }
+
+    .card-body {
+        padding: 20px; /* Reduce the padding */
+    }
+
+    .card-body h3 {
+        font-size: 20px; /* Smaller text size */
+        margin-bottom: 10px;
+    }
+
+    .card-body p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+
+
+  
+
+}
+
+/* For screens smaller than 450px */
+@media (max-width: 450px) {
+ 
+
+    
+
+    .card {
+        height: 250px; /* Further reduced card height */
+        padding: 8px;
+    }
+
+    .card-head {
+        padding: 8px;
+    }
+
+    .card-head-img-container {
+        width: 45.3px; /* Smaller image container */
+        height: 45px;
+    }
+
+    .card-head-img-container img {
+        height: 60%; /* Smaller image */
+        width: 60%;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-body h3 {
+        font-size: 23.7px; /* Further reduced header text */
+        margin-bottom: 8px;
+    }
+
+    .card-body p {
+        font-size: 13.2px; /* Further reduced paragraph text */
+    }
+
+
+
+    .carousel-dots .dot {
+        height: 10px;
+        width: 10px;
+    }
+
+}

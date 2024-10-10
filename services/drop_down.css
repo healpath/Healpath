@@ -1,0 +1,25 @@
+/* Dropdown menu (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #232b2b;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px 0;
+}
+
+.dropdown-content a:hover {
+    color: #2E937C;
+}
+
+.show {
+    display: block;
+}
