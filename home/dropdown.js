@@ -1,29 +1,3 @@
-// Toggle the dropdown when "Pages" is clicked
-function togglePagesMenu() {
-    var dropdown = document.getElementById("pagesDropdown");
-    dropdown.classList.toggle("show");
-}
-
-
-
-// Close the dropdown when clicking outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
-
-
-
-
-
 // Toggle the mobile menu when the hamburger is clicked
 document.getElementById("hamburger").addEventListener("click", function(event) {
     var mobileMenu = document.getElementById("mobileMenu");
